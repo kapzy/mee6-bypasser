@@ -57,4 +57,4 @@ async def on_ready():
 with open("configuration.json", "r") as roleFile:
     data = json.load(roleFile)
     token = data["token"]
-bot.run(token)
+bot.run(os.getenv('Token'))
